@@ -43,7 +43,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginBottom="10dp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -58,8 +58,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:hint="Email"
                             android:inputType="textEmailAddress" />
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -79,20 +79,34 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:hint="Senha"
-                            android:inputType="textEmailAddress" />
+                            android:inputType="numberPassword" />
+
                     </LinearLayout>
                 </LinearLayout>
 
             </LinearLayout>
 
-            <Button
-                android:id="@+id/btLogin"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
-                android:layout_weight="1"
-                android:text="Logar" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:text="Cadastrar" />
+
+                <Button
+                    android:id="@+id/btLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:text="Logar" />
+            </LinearLayout>
 
         </LinearLayout>
     </LinearLayout>
